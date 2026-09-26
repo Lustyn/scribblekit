@@ -1,0 +1,24 @@
+[package]
+name = "scribble-wiiu"
+description = "Reads the Wii U build of Scribblenauts Unlimited and ports its exclusive content to the PC release"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "wiiu-port-installer"
+path = "src/bin/wiiu-port-installer.rs"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+flate2.workspace = true
+scribble-core.workspace = true
+scribble-pack.workspace = true
+scribble-formats.workspace = true
+fmt-dictionary = { path = "../fmt-dictionary" }
+fmt-effects = { path = "../fmt-effects" }
+fmt-object = { path = "../fmt-object" }

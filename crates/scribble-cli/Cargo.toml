@@ -1,0 +1,22 @@
+[package]
+name = "scribble-cli"
+description = "Command-line tool for unpacking, decoding, encoding and repacking Scribblenauts Unlimited assets"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "scribble"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+serde_json.workspace = true
+clap = { version = "4", features = ["derive"] }
+rayon = "1"
+scribble-core.workspace = true
+scribble-pack.workspace = true
+scribble-formats.workspace = true
+scribble-wiiu = { path = "../scribble-wiiu" }

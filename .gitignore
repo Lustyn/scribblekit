@@ -1,0 +1,22 @@
+/target
+/game
+/extracted
+/decoded
+/rebuilt
+/re/project
+/tools/ghidra_*
+/tools/DepotDownloader
+__pycache__
+*.new.png
+# Decompiled game code and Ghidra output (derived from the game binary; regenerate locally)
+/re/decompiled.c
+/re/strings.txt
+/re/ghidra.log
+/wiiu
+/out
+.DS_Store
+*.wiiu_port_tmp
+# Screenshot tests render game art: local only
+/crates/scribble-studio/tests/snapshots.rs
+/crates/scribble-studio/tests/gallery.rs
+/crates/scribble-studio/tests/snapshots/

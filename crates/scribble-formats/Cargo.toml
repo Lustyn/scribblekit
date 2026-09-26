@@ -1,0 +1,23 @@
+[package]
+name = "scribble-formats"
+description = "Registry mapping Scribblenauts resource paths to their codecs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+scribble-core.workspace = true
+scribble-pack.workspace = true
+fmt-object = { path = "../fmt-object" }
+fmt-dictionary = { path = "../fmt-dictionary" }
+fmt-vec = { path = "../fmt-vec" }
+fmt-anim = { path = "../fmt-anim" }
+fmt-map = { path = "../fmt-map" }
+fmt-ui = { path = "../fmt-ui" }
+fmt-effects = { path = "../fmt-effects" }
+fmt-common = { path = "../fmt-common" }
